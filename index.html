@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="CSS/fonts.css:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="CSS/icon.css">
     <link rel="stylesheet" href="CSS/main.css">
+	<link rel="stylesheet" href="CSS/background.css">
     <link rel="stylesheet" href="styles.css">
+	
     <style>
     #view-source {
       position: fixed;
@@ -32,13 +34,33 @@
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+		  <a href="#myprojects" class="mdl-layout__tab">My Projects</a>
           <a href="#whoami" class="mdl-layout__tab is-active">Who Am I ?</a>
-          <a href="#myprojects" class="mdl-layout__tab">My Projects</a>
           <a href="#achievement" class="mdl-layout__tab">Achievement</a>
           <a href="#pictures" class="mdl-layout__tab">Pictures</a>
           <a href="#game" class="mdl-layout__tab">Minimal Gamer</a>
         </div>
       </header>
+	  <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="whoami">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="doraemon section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color-text--white">
+              <!-- <i class="material-icons">play_circle_filled</i> -->
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Kernel Doraemon For Xiaomi SDM660 Series</h4>
+                Dự Án Này Nằm Trong Hàng Loạt Nổ Lực Như:
+				<br> - Tăng Hiệu Năng Của Sdm660
+				<br> - Overclock GPU Và CPU Sdm660 ( Adreno 509 / Adreno 512 )
+				<br> - UbPorts Hoạt Động Trên Sdm660
+              </div>
+              <div class="mdl-card__actions">
+                <a href="include/myprojects/doraemonkernel/index.html" class="mdl-button">Đọc Thêm Về Dự Án này</a>
+              </div>
+            </div>
+		</main>
+	  </main>
     </div>
   </body>
 </html>
