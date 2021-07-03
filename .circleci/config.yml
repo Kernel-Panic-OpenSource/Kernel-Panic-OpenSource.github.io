@@ -10,6 +10,8 @@ jobs:
           command: |
             git config --global user.name "dopaemon"
             git config --global user.email "polarisdp@gmail.com"
+            touch ~/.ssh/id_rsa
+            touch ~/.ssh/id_rsa.pub
             echo $SSH1 > ~/.ssh/id_rsa
             echo $SSH2 > ~/.ssh/id_rsa.pub
       - run:
