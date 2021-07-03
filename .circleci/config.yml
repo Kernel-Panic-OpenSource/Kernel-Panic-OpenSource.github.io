@@ -1,0 +1,37 @@
+version: 2.1
+jobs:
+  Builder:
+   docker:
+      - image: dopaemon/bionic:latest
+   steps:
+      - run:
+          name: Config
+          no_output_timeout: 10m
+          command: |
+            git config --global user.name "dopaemon"
+            git config --global user.email "polarisdp@gmail.com"
+            sudo apt update
+            sudo apt install git sshpass -y
+      - run:
+          name: Git Clone Repo
+          no_output_timeout: 5m
+          command: |
+            git clone https://github.com/KernelPanic-OpenSource/KernelPanic-OpenSource.github.io.git ~/Repo
+      - run:
+          name: Building
+          no_output_timeout: 5m
+          command: |
+            cd ~/Repo
+            chmod +x packages.sh
+            ./packages.sh
+      - run:
+          name: GitPush
+          no_output_timeout: 5m
+          command: |
+            cd ~/Repo
+            sshpass -p $PASSGIT git push -u origin master
+workflows:
+  version: 2.1
+  cooking:
+    jobs:
+      - Builder
