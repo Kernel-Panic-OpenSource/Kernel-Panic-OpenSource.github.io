@@ -1,22 +1,23 @@
 Package: dospad
-Version: 0.74
-Section: Tweaks
-Maintainer: https://cydia.litchie.com/
+Version: 2.0.1
+Section: Ứng Dụng
+Maintainer:
 Depends: firmware (<9.0)
 Architecture: iphoneos-arm
 Filename: ./debs/dospad.deb
-Size: 3546204
-Description: Dosbox
-Name: Dospad
-Author: Dosbox
+Size:
+Description: Dosbox Dành Cho IOS Đã Jailbreak
+Name: DOSPAD Emulator
+Author: DOSBOX 0.74
 
 Package: aemula
-Version: 0.0.1
-Section: Tweaks
-Maintainer: https://cydia.litchie.com/
+Version: 1.1
+Section: Ứng Dụng
+Maintainer:
 Depends: firmware (<9.0)
 Filename: ./debs/aemula.deb
-Size: 3546204
-Description: Aemula
-Name: Aemula
+Size:
+Description: Aemula Dành Cho IOS Đã Jailbreak
+Name: Aemula Emulator
 Author: Aemula
+
