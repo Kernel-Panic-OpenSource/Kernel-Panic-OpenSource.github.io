@@ -9,3 +9,14 @@ Size: 3546204
 Description: Dosbox
 Name: Dospad
 Author: Dosbox
+
+Package: aemula
+Version: 0.0.1
+Section: Tweaks
+Maintainer: https://cydia.litchie.com/
+Depends: firmware (<9.0)
+Filename: ./debs/aemula.deb
+Size: 3546204
+Description: Aemula
+Name: Aemula
+Author: Aemula
