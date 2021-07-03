@@ -13,6 +13,7 @@ jobs:
           command: |
             git config --global user.name "dopaemon"
             git config --global user.email "polarisdp@gmail.com"
+            mkdir -p ~/.ssh
             ssh-keyscan -H github.com >> ~/.ssh/known_hosts
       - run:
           name: Git Clone Repo
