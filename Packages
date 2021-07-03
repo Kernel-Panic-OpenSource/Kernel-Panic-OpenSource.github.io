@@ -1,13 +1,13 @@
-Package: dosbox
+Package: dospad
 Version: 0.74
 Section: Tweaks
 Maintainer: https://cydia.litchie.com/
 Depends: firmware (<9.0)
 Architecture: iphoneos-arm
-Filename: ./debs/dosbox.deb
+Filename: ./debs/dospad.deb
 Size: 3546204
 Description: Dosbox
-Name: Dosbox
+Name: Dospad
 Author: Dosbox
 
 Package: com.supermamon.oldpackage
