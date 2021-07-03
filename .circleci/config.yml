@@ -37,7 +37,7 @@ jobs:
           no_output_timeout: 5m
           command: |
             cd ~/Repo
-            echo "yes" | git push -f origin master        
+            echo "yes" | git push -u origin master        
 workflows:
   version: 2.1
   cooking:
