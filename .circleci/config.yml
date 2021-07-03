@@ -4,17 +4,15 @@ jobs:
    docker:
       - image: dopaemon/bionic:latest
    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "e9:75:fa:04:22:99:6b:62:d9:45:a8:32:25:c5:01:c5"
       - run:
           name: Config
           no_output_timeout: 10m
           command: |
             git config --global user.name "dopaemon"
             git config --global user.email "polarisdp@gmail.com"
-            mkdir -p ~/.ssh
-            touch ~/.ssh/id_rsa
-            touch ~/.ssh/id_rsa.pub
-            echo $SSH1 > ~/.ssh/id_rsa
-            echo $SSH2 > ~/.ssh/id_rsa.pub
             ssh-keyscan -H github.com >> ~/.ssh/known_hosts
       - run:
           name: Git Clone Repo
