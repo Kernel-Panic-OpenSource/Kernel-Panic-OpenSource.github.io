@@ -27,7 +27,7 @@ jobs:
             cd ~/Repo
             rm -rvf Packages.bz2
             bzip2 -zvk Packages
-            git add .
+            git add -v -A
             git commit -sm "Update Repo"
       - run:
           name: GitPush
