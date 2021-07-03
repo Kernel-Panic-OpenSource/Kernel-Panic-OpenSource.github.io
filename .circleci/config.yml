@@ -6,7 +6,7 @@ jobs:
    steps:
       - add_ssh_keys:
           fingerprints:
-            - "1d:06:03:42:fb:f1:35:4b:ca:85:dd:5c:d9:80:a2:ff"
+            - "23:94:8f:36:db:fd:2d:43:1c:ed:6e:4e:c7:04:9a:f1"
       - run:
           name: Config
           no_output_timeout: 10m
