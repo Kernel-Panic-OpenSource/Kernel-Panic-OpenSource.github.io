@@ -1,8 +1,8 @@
-Origin: dragonslayer4832's Repo
-Label: dragonslayer4832
+Origin: Kernel Panic Open Source
+Label: KernelPanic
 Suite: stable
 Version: 1.0
-Codename: dragonslayer4832
+Codename: IOS
 Architecture: iphoneos-arm
 Components: main
-Description: Tweaks I find useful :) If you want something taken down, PM me on reddit: /u/dragonslayer4832
+Description: Some Ios Tweak From Cydia, I Save This.
