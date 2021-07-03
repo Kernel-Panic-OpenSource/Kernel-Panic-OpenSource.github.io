@@ -1,8 +1,8 @@
-Origin: Kernel Panic Open Source
-Label: KernelPanic
+Origin: Reposi3
+Label: Reposi3
 Suite: stable
 Version: 1.0
-Codename: IOS
-Architecture: iphoneos-arm
+Codename: ios
+Architectures: iphoneos-arm
 Components: main
-Description: Some Ios Tweak From Cydia, I Save This.
+Description: Reposi3 - a cydia repo template
