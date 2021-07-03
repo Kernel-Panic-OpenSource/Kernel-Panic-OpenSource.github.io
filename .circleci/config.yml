@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   Builder:
    docker:
-      - image: docker pull alpine/git:v2.30.2
+      - image: alpine/git
    steps:
       - add_ssh_keys:
           fingerprints:
