@@ -21,20 +21,34 @@ jobs:
           command: |
             git clone git@github.com:KernelPanic-OpenSource/KernelPanic-OpenSource.github.io.git ~/Repo
       - run:
-          name: Building
+          name: Remove
           no_output_timeout: 5m
           command: |
             cd ~/Repo
             rm -rvf Packages.bz2
-            bzip2 -zvk Packages
+            git rm Packages.bz2
             git add -v -A
-            git commit -sm "Update Repo"
+            git commit -sm "Remove Old Packages"
       - run:
           name: GitPush
           no_output_timeout: 5m
           command: |
             cd ~/Repo
-            echo "yes" | git push -u origin master
+            echo "yes" | git push -f origin master
+      - run:
+          name: Building
+          no_output_timeout: 5m
+          command: |
+            cd ~/Repo
+            bzip2 -zvk Packages
+            git add -v -A
+            git commit -sm "Add New Packages"
+      - run:
+          name: GitPush
+          no_output_timeout: 5m
+          command: |
+            cd ~/Repo
+            echo "yes" | git push -f origin master            
 workflows:
   version: 2.1
   cooking:
